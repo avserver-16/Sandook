@@ -35,19 +35,19 @@ function BottomTabs() {
         >
             <Tab.Screen name="Homescreen" component={Homescreen} options={{
                 tabBarIcon: () => (
-                    <MaterialIcons name="home" color={'black'} size={30} style={{ top: 10 }} />
+                    <MaterialIcons name="home" color={'#033e49'} size={30} style={{ top: 10 }} />
                 ),
             }} />
             <Tab.Screen name="Favourites" component={Favourites}
                 options={{
                     tabBarIcon: () => (
-                        <MaterialIcons name="heart" color={'black'} size={30} style={{ top: 10 }} />
+                        <MaterialIcons name="heart" color={'#033e49'} size={30} style={{ top: 10 }} />
                     ),
                 }} />
             <Tab.Screen name="Profile" component={Profile}
                 options={{
                     tabBarIcon: () => (
-                        <MaterialIcons name="account" color={'black'} size={30} style={{ top: 10 }} />
+                        <MaterialIcons name="account" color={'#033e49'} size={30} style={{ top: 10 }} />
                     ),
                 }} />
         </Tab.Navigator >
