@@ -1,9 +1,11 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialIcons from '@react-native-vector-icons/material-design-icons';
 import Homescreen from './Homescreen';
+import VisitLater from './VisitLater';
 import Favourites from './Favourites';
 import Profile from './Profile';
 import { Button } from 'react-native-paper';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -38,6 +40,12 @@ function BottomTabs() {
                     <MaterialIcons name="home" color={'#033e49'} size={30} style={{ top: 10 }} />
                 ),
             }} />
+            <Tab.Screen name="VisitLater" component={VisitLater}
+                options={{
+                    tabBarIcon: () => (
+                        <MaterialIcons name="clock" color={'#033e49'} size={30} style={{ top: 10 }} />
+                    ),
+                }} />
             <Tab.Screen name="Favourites" component={Favourites}
                 options={{
                     tabBarIcon: () => (
